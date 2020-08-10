@@ -15,6 +15,7 @@ class Author
 
   def add_post(post)
     @posts << post
+    @@allPosts += 1
     if (post.author != self)
       post.author = self
     end
