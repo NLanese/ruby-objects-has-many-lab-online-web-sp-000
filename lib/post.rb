@@ -15,6 +15,13 @@ class Post
     @@all << self
   end
 
+  def author=(author)
+    @author = author
+    if !(author.posts.include?(self))
+      author.add_post(self)
+    end
+  end
 
+  
 
 end
