@@ -22,6 +22,12 @@ class Post
     end
   end
 
+  def author
+    @author
+  end
 
-
+  def self.all
+    @@all
+  end
+  
 end
