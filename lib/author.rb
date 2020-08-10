@@ -34,6 +34,7 @@ class Author
         rVal += 1
       end
     end
+    return rVal
   end
 
 end
