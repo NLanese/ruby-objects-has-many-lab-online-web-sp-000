@@ -9,13 +9,12 @@ class Author
   end
 
   def posts
-    posts = []
     Post.all.each do | post |
       if (post.author == self)
-        posts << post
+        @posts << post
       end
     end
-    posts
+    @posts
   end
 
   def add_post(post)
