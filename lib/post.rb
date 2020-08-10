@@ -30,7 +30,7 @@ class Post
     if (@author != nil)
       @author.name
     else
-      false
+      nil
     end
   end
 
