@@ -6,11 +6,16 @@ class Author
 
   def initialize(name)
     @name = name
-    @posts =[]
   end
 
   def posts
-    @posts
+    posts = []
+    Post.all.each do | post |
+      if (post.author == self)
+        posts << post
+      end
+    end
+    posts
   end
 
   def add_post(post)
