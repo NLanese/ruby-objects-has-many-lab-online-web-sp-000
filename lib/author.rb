@@ -33,7 +33,7 @@ class Author
       if (post.author != nil)
         rVal += 1
       end
-    end 
+    end
   end
-        
+
 end
