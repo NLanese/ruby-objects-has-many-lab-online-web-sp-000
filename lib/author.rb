@@ -26,4 +26,8 @@ class Author
     newPost.author = self
   end
 
+  def post_count
+    @@allPosts
+  end
+
 end
